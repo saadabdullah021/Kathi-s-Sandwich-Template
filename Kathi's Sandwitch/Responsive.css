@@ -1,0 +1,802 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+::selection {
+    user-select: none;
+}
+
+::placeholder {
+    color: white;
+    position: relative;
+    left: 10px;
+}
+
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media only screen and (max-width: 1200px) {
+    .custom-ul li a {
+        margin-left: 30px;
+        border-bottom: 1px dashed brown;
+    }
+    .navbar-nav {
+        background-color: white;
+        text-align: center;
+    }
+    .navbar-toggler {
+        position: static !important;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .wrapper {
+        height: 210px;
+    }
+    .wrapper .navbar {
+        width: 100%;
+        z-index: 1;
+        height: 60px;
+        background-color: #F7DC6F;
+    }
+    /*NAVBAR ICON*/
+    .navbar-nav .navbar-toggler {
+        width: 30px;
+        height: 30px;
+        border: none;
+        outline: none;
+    }
+    .navbar-nav #navbarSupportedContent ul li:hover {
+        background-color: transparent;
+        transition: .4s ease-in;
+    }
+    .navbar-nav {
+        background-color: #F7DC6F !important;
+        transition: .4s ease;
+        text-align: center;
+        position: static;
+    }
+    #home .navbar-brand img {
+        margin-top: 0px !important;
+    }
+    /* Ribbon Setting */
+    .ribbon {
+        position: absolute;
+        display: none;
+        left: 150px;
+        width: 300px;
+        text-align: center;
+        height: 80px;
+        background: #fcf8a9;
+        color: #c0792a;
+        border-radius: 2px;
+        padding: 10px;
+        top: -75px;
+    }
+    .ribbon:before,
+    .ribbon:after {
+        content: "";
+        position: absolute;
+        display: block;
+        bottom: -1em;
+        border: 1.2em solid #fcf8a9;
+        z-index: -1;
+    }
+    .ribbon:before {
+        left: -1.7em;
+        border-right-width: 1.5em;
+        border-left-color: transparent;
+    }
+    .ribbon:after {
+        right: -1.7em;
+        border-left-width: 1.5em;
+        border-right-color: transparent;
+    }
+    .main-card {
+        position: relative;
+        width: 300px;
+        height: 60px;
+    }
+    .main-card .card {
+        background-color: #c17d30;
+        position: relative;
+        opacity: 0.9;
+        width: 300px;
+        display: block;
+        margin: 0 auto;
+        height: 60px;
+        top: -150px;
+    }
+    .main-card .card p {
+        font-size: 5pt;
+        width: 280px;
+        position: absolute;
+        height: 55px;
+        margin-left: -21px;
+        top: 15px;
+        color: rgba(255, 255, 255, 255);
+        text-align: center;
+    }
+    .main-section-img img {
+        max-width: 100%;
+        position: relative;
+        height: 150px;
+    }
+    /* END HOME AREA */
+    /*START TREAT AREA */
+    .menu-area {
+        width: 100%;
+        position: relative;
+        height: 1620px;
+    }
+    .items-cards .card-deck {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        width: 354px;
+        height: 710px;
+    }
+    .left-card {
+        width: 350px;
+        position: relative;
+        left: 0px;
+        height: 354px;
+    }
+    .items-cards .card-deck .left-card .card-1 {
+        width: 350px;
+        left: -40px;
+        height: 354px;
+    }
+    .items-cards .card-deck .card-1 .left-side {
+        position: absolute;
+        width: 150px;
+        left: -2px;
+        height: 220px;
+        top: 35px;
+    }
+    .items-cards .card-deck .img-1 {
+        width: 150px;
+        height: 285px;
+        border-radius: 5px;
+        position: relative;
+    }
+    .items-cards .card-deck .img-2 {
+        width: 150px;
+        height: 285px;
+        top: 0;
+        left: 0;
+        border-radius: 5px;
+        position: absolute;
+        transform: rotate(5deg);
+    }
+    .items-cards .card-deck .card-1 .right-side {
+        position: relative;
+        left: 110px;
+        top: -20px;
+        width: 250px;
+    }
+    .items-cards .card-deck .card-1 .right-side .item-title {
+        font-size: larger;
+        margin-top: 30px;
+    }
+    .item-title::after {
+        content: "";
+        position: absolute;
+        top: 35px;
+        left: 2px;
+    }
+    .items-cards .card-deck .card-1 .right-side .table {
+        width: 250px;
+        padding-right: 5px;
+        font-size: small;
+    }
+    .right-table {
+        position: absolute;
+        width: 60px;
+        left: 100px;
+        height: 354px;
+        margin-top: -20px;
+    }
+    .right-card {
+        width: 350px;
+        position: relative;
+        left: 0px;
+        height: 354px;
+    }
+    .right-table-1 {
+        position: absolute;
+        width: 100px;
+        left: 100px;
+        height: 354px;
+        margin-top: 0px;
+    }
+    .items-cards .card-deck .card-2 .right-side .table {
+        width: 250px;
+        padding-right: 5px;
+        font-size: small;
+    }
+    .items-cards .card-deck .card-2 .right-side {
+        position: absolute;
+        width: 250px;
+        left: 150px;
+        height: 354px;
+        top: -25px;
+    }
+    .items-cards .card-deck .card-2 .right-side .table {
+        width: 250px;
+        padding-right: 5px;
+        font-size: small;
+    }
+    .card-2 .right-side .item-title {
+        font-size: larger;
+        margin-top: 30px;
+    }
+    .items-cards .card-deck .card-2 .left-side {
+        position: absolute;
+        width: 150px;
+        left: -2px;
+        height: 220px;
+        top: 35px;
+    }
+    .card-3 {
+        position: relative;
+        top: -60px;
+    }
+    .card-4 {
+        position: relative;
+        top: -65px;
+    }
+    .card-4 .card-4-content #softy-ice-cream .table {
+        width: 250px;
+        padding-right: 5px;
+        font-size: small;
+    }
+    .card-4 .card-4-content #softy-ice-cream {
+        position: relative;
+        left: -2px;
+        top: -30px;
+    }
+    .right-table-2 {
+        position: absolute;
+        width: 100px;
+        left: 130px;
+        height: 354px;
+        margin-top: 0px;
+    }
+    .menu-button {
+        display: block;
+        margin: auto;
+        position: relative;
+        margin-top: -60px;
+    }
+    /*END TREAT AREA */
+    /*START GALLERY SECTION8/
+
+/*---------Start Gallery Section ------------------*/
+    .gallery-area {
+        height: 1150px;
+        background-color: #ffffff;
+    }
+    .gallery-area .btn-group {
+        text-align: center;
+        display: block;
+        width: 100%;
+        height: fit-content;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .gallery-area .btn-group .btns {
+        width: 110px;
+        height: 43px;
+        margin: 2px;
+        background-color: #f1e4d4;
+        border-radius: 40px;
+        font-size: 12px;
+    }
+    .gallery-area .btn-group .active {
+        text-align: center;
+        width: 60px;
+        height: 43px;
+        color: white;
+        opacity: .9;
+        background: #ba762a;
+    }
+    .gallery-area .gallery-sections {
+        width: 370px;
+        height: 810px;
+    }
+    .gallery-area .gallery-sections .gallery-col-1 {
+        width: 370px;
+        height: 400px;
+    }
+    .gallery-area .gallery-sections .gallery-col-1 img {
+        width: 370px;
+        position: relative;
+        height: 400px;
+        border-radius: 2px;
+    }
+    .gallery-area .gallery-sections .gallery-col-2 {
+        position: relative;
+        width: 370px;
+        height: 400px;
+    }
+    .gallery-area .gallery-sections .gallery-col-2 img {
+        width: 754px;
+        height: 240px;
+        border-radius: 2px;
+        margin-left: 30px;
+    }
+    .gallery-area .gallery-sections .gallery-col-2 .layer113 {
+        position: relative;
+        left: -160px;
+        bottom: 0px;
+        width: 150px;
+        height: 150px;
+    }
+    .gallery-area .gallery-sections .gallery-col-2 .layer114 {
+        position: absolute;
+        left: 207px;
+        bottom: 0px;
+        width: 150px;
+        height: 150px;
+    }
+    .gallery-button {
+        width: 241px;
+        height: 61px;
+        display: block;
+        margin: auto;
+        text-align: center;
+        border-radius: 50px;
+        outline: none;
+        color: rgba(255, 255, 255, 255);
+        border: none;
+        margin-top: 10px;
+        background: #ba762a;
+    }
+    /*END GALLERY SECTION */
+    /*START ABOUT SECTION */
+    .gallery-section-2 {
+        height: 1000px;
+    }
+    .gallery-section-2 #gallery-section-right-1 {
+        width: 96%;
+        height: 450px;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+    }
+    .gallery-section-2 #gallery-section-right-1 .layer120 {
+        width: 97%;
+        display: block;
+        margin: 0 auto;
+        height: 450px;
+    }
+    .gallery-section-2 #gallery-section-right-2 {
+        width: 96%;
+        height: 550px;
+        display: block;
+        margin: 0 auto;
+        top: 10px;
+        position: relative;
+    }
+    .gallery-section-2 #gallery-section-right-2 h5 {
+        opacity: .8;
+        padding: 10px;
+    }
+    .gallery-section-2 #gallery-section-right-2 h3 {
+        width: 250px;
+        padding-bottom: 40px;
+    }
+    .gallery-section-2 #gallery-section-right-2 p {
+        width: 370px;
+        position: relative;
+        margin-top: -30px;
+        padding: 2px;
+    }
+    .gallery-btn-wrapper {
+        max-width: 100vw;
+        position: absolute;
+    }
+    .gallery-section-2 .gallery-section-right .gallery-button {
+        border-radius: 50px;
+        margin: auto;
+        display: block;
+        width: 168px;
+        height: 43px;
+        position: relative;
+        outline: none;
+        color: white;
+        border: none;
+        background: #ba762a;
+    }
+    /*END ABOUT SECTION*/
+    /*START CONTACT AREA*/
+    .contact-area {
+        width: 100%;
+        height: 700px;
+        overflow: hidden;
+    }
+    .contact-area .contact-form {
+        position: relative;
+        left: 10px;
+        width: 70%;
+        height: 500px;
+        background-color: #b66b24;
+    }
+    .image-right img {
+        width: 350px;
+        height: 700px;
+        top: -550px;
+        position: relative;
+    }
+    /*END CONTACT AREA */
+    /* --------------------Start Footer Area----------- */
+    .footer-wrapper {
+        background-image: linear-gradient(360deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, .6), rgba(0, 0, 0, .7)), url("Asset/Layer\ 31@1X.png");
+        background-color: #2b2520;
+        background-position: center center;
+        background-attachment: fixed;
+        overflow: hidden;
+        background-size: cover;
+        height: 440px;
+    }
+    .footer-area .footer-side-1 {
+        position: relative;
+        left: 2%;
+    }
+    .footer-area .footer-side-2 {
+        width: 100%;
+        top: -60px;
+        font-size: small;
+        left: 240px;
+        position: relative;
+    }
+    .footer-area .footer-side-3 {
+        width: 100%;
+        top: -160px;
+        left: 20px;
+        font-size: small;
+        position: relative;
+    }
+    .footer-area .footer-side-4 {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        top: -310px;
+        left: 0px;
+    }
+    .footer-area .footer-side-4 h5 {
+        color: white;
+        position: relative;
+        width: 300px;
+    }
+    .footer-area .footer-side-4 .input-group {
+        position: relative;
+        margin-top: -25px;
+        left: 6px;
+    }
+    .footer-social-icons {
+        position: absolute;
+        left: -100px;
+    }
+    .footer-social-icons .fa-facebook {
+        width: 30px;
+        height: 30px;
+        color: black;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 50%;
+        margin-right: 5px;
+        background-color: white;
+    }
+    .footer-social-icons .fa-twitter {
+        width: 30px;
+        height: 30px;
+        color: black;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 50%;
+        background-color: white;
+    }
+    .footer-title {
+        width: 100%;
+        height: 100px;
+        position: relative;
+        top: -250px;
+        left: -180px;
+        font-size: small;
+    }
+    /*END FOOTER AREA */
+}
+
+
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+   
+   
+  
+    /*CARD SETTING */
+    .main-card {
+        position: relative;
+    }
+    .main-card .card {
+        background-color: #c17d30;
+        opacity: 0.9;
+        width: 580px;
+        display: block;
+        margin: 0 auto;
+        height: 150px;
+        margin-top: -210px;
+    }
+    .main-card .card p {
+        font-size: 12pt;
+        width: 580px;
+        position: absolute;
+        height: 120px;
+        color: rgba(255, 255, 255, 255);
+        overflow: hidden;
+        text-align: center;
+        margin-left: -30px;
+    }
+    /*RIBBON SETTING*/
+    .ribbon {
+        position: absolute;
+        display: block;
+        left: 150px;
+        width: 300px;
+        text-align: center;
+        height: 80px;
+        background: #fcf8a9;
+        color: #c0792a;
+        border-radius: 2px;
+        padding: 10px;
+        top: -75px;
+    }
+    .ribbon:before,
+    .ribbon:after {
+        content: "";
+        position: absolute;
+        display: block;
+        bottom: -1em;
+        border: 1.2em solid #fcf8a9;
+        z-index: -1;
+    }
+    .ribbon:before {
+        left: -1.7em;
+        border-right-width: 1.5em;
+        border-left-color: transparent;
+    }
+    .ribbon:after {
+        right: -1.7em;
+        border-left-width: 1.5em;
+        border-right-color: transparent;
+    }
+    /*START MENU SECTION*/
+    .menu-area {
+        width: 100%;
+        position: relative;
+        height: 1720px;
+    }
+    .items-cards .card-deck {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        width: 550px;
+        height: 710px;
+    }
+    .left-card {
+        width: 550px;
+        position: relative;
+        left: -15px;
+        height: 354px;
+        display: block;
+        margin: auto;
+    }
+    .items-cards .card-deck .card-1 .left-side {
+        position: absolute;
+        left: -50px;
+        top: 35px;
+    }
+    .items-cards .card-deck .card-1 .right-side {
+        position: relative;
+        left: 80px;
+        top: -20px;
+    }
+    .right-card {
+        margin-top: 10px;
+        width: 550px;
+        position: relative;
+        left: -15px;
+        height: 354px;
+        top: 10px;
+        display: block;
+        margin: auto;
+    }
+    .items-cards .card-deck .card-2 .right-side {
+        position: relative;
+        left: 80px;
+        top: -20px;
+    }
+    .card-3 {
+        position: relative;
+        top: -60px;
+    }
+    .card-4 {
+        position: relative;
+        top: -40px;
+    }
+    .menu-button {
+        display: block;
+        margin: auto;
+        position: relative;
+        margin-top: -40px;
+    }
+    /*END TREAT AREA */
+    /*START GALLERY AREA */
+    .gallery-area {
+        background-color: #ffffff;
+        width: 768px;
+        height: 1100px;
+    }
+    .gallery-area .gallery-sections {
+        display: block;
+        margin: auto;
+        width: 768px;
+        height: 800px;
+    }
+    .gallery-area .gallery-sections .gallery-col-1 {
+        position: relative;
+        top: 2%;
+    }
+    .gallery-area .gallery-sections .gallery-col-2 img {
+        position: absolute;
+        top: -96%;
+        left: 105%;
+        border-radius: 2px;
+    }
+    .gallery-area .gallery-sections .gallery-col-2 .layer113 {
+        top: -49%;
+        width: 500px;
+        margin-top: 5px;
+        left: 105%;
+        position: absolute;
+    }
+    .gallery-area .gallery-sections .gallery-col-2 .layer114 {
+        width: 742px;
+        margin-top: 5px;
+        top: 3%;
+        left: 11%;
+        position: absolute;
+    }
+    /*END GALLERY AREA */
+    /* START ABOUT AREA */
+    .gallery-section-2 .gallery-section-right {
+        width: 100%;
+        height: 596px;
+        position: relative;
+        left: -45px;
+    }
+    .gallery-section-2 .gallery-section-right .layer120 {
+        width: 100%;
+        height: 596px;
+    }
+    .gallery-section-2 .gallery-section-right p {
+        text-align: justify;
+        width: 380px;
+        height: 360px;
+        padding: 5px;
+    }
+    /* END ABOUT AREA */
+    /* START CONTACT AREA */
+    .contact-area {
+        width: 100%;
+        height: 700px;
+    }
+    .contact-area .contact-form {
+        background-color: #b66b24;
+        left: 100px;
+        top: 75px;
+        z-index: 9999;
+    }
+    .image-right img {
+        position: relative;
+        left: 30px;
+    }
+    /*END CONTACT AREA */
+    /* --------------------Start Footer Area----------- */
+    .footer-wrapper {
+        background-image: linear-gradient(360deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, .6), rgba(0, 0, 0, .7)), url("Asset/Layer\ 31@1X.png");
+        background-color: #2b2520;
+        background-position: center center;
+        background-attachment: fixed;
+        overflow: hidden;
+        background-size: cover;
+        height: 390px;
+    }
+    .footer-area .footer-side-1 {
+        position: relative;
+        left: 60px;
+        top: 50px;
+    }
+    .footer-area .footer-side-2 {
+        width: 100%;
+        position: relative;
+        left: 140px;
+    }
+    .footer-area .footer-side-3 {
+        width: 500px;
+        height: 300px;
+        position: relative;
+        left: 150px;
+    }
+    .footer-area .footer-side-4 {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        top: 200px;
+        left: -550px;
+    }
+    .footer-area .footer-side-4 h5 {
+        color: white;
+        position: relative;
+        width: 300px;
+    }
+    .footer-area .footer-side-4 .input-group {
+        position: relative;
+        margin-top: -25px;
+        left: 6px;
+    }
+    .footer-social-icons {
+        width: 100%;
+        position: relative;
+        margin-left: 400px;
+    }
+    .footer-social-icons .fa-facebook {
+        width: 30px;
+        height: 30px;
+        color: black;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 50%;
+        margin-right: 5px;
+        background-color: white;
+    }
+    .footer-social-icons .fa-twitter {
+        width: 30px;
+        height: 30px;
+        color: black;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 50%;
+        background-color: white;
+    }
+    .footer-end-wrapper {
+        position: relative;
+        top: 50px;
+        left: -130px;
+    }
+    .footer-title {
+        width: 400px;
+    }
+    /*END FOOTER AREA */
+}
